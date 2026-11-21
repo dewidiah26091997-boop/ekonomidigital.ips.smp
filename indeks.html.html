@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jelajah Ekonomi - Modul IPS Interaktif</title>
+<style>
+:root{--navy:#173d65;--blue:#2879a8;--mint:#dff3e9;--green:#23734f;--orange:#f2a541;--ink:#203247;--paper:#f4f7fa;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#173d65,#2879a8);color:white;padding:30px 18px 24px}
+.wrap{max-width:1000px;margin:auto;padding:0 16px}
+.kicker{letter-spacing:2px;font-size:.75rem;font-weight:bold;color:#cde9ff}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:8px 0}
+header p{max-width:700px;color:#e5f3ff}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+button,.navbtn{border:0;border-radius:10px;padding:10px 14px;background:var(--navy);color:white;cursor:pointer;font-weight:700}
+nav button{background:#ffffff20;border:1px solid #ffffff55}
+button:hover,.navbtn:hover{filter:brightness(1.12)}
+main{padding:24px 0 48px}.panel{background:white;border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 5px 20px #18334b0d}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+.illustration{background:linear-gradient(145deg,#e1f2fb,#e1f5e9);border-radius:16px;padding:24px;text-align:center;font-size:3.4rem}
+.tag{display:inline-block;background:#e5f2fb;color:#1c5b83;padding:5px 10px;border-radius:20px;font-size:.78rem;font-weight:bold}
+h2{color:var(--navy);margin-top:0}h3{color:#28688f}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.tile{background:#f5f9fc;border:1px solid #e2ebf1;padding:15px;border-radius:12px}
+.tile b{display:block;color:var(--navy);margin-bottom:5px}
+.flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px 0}
+.flow span{background:#e8f4ed;padding:12px 16px;border-radius:10px;font-weight:bold;color:#245d43}
+.flow i{font-style:normal;color:#789}
+.case{background:#fff8e9;border-left:5px solid var(--orange);padding:14px;border-radius:8px}
+.question{border:1px solid #e3ebf1;border-radius:12px;padding:14px;margin:12px 0}
+.question label{display:block;margin:7px 0;cursor:pointer}
+.feedback{font-weight:bold;margin-top:8px}
+input[type=text],textarea{width:100%;padding:12px;border:1px solid #cbd8e2;border-radius:9px;font:inherit}
+textarea{min-height:100px}
+.small{font-size:.88rem;color:#617487}
+.progress{height:9px;background:#e2eaf0;border-radius:20px;overflow:hidden;margin:12px 0}
+.progress div{height:100%;width:0;background:var(--orange);transition:width .3s}
+footer{text-align:center;color:#66798a;padding:20px;font-size:.85rem}
+.hidden{display:none}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.panel{padding:17px}.illustration{font-size:2.5rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="kicker">MEDIA PEMBELAJARAN IPS • FASE D</div>
+<h1>JELAJAH<br>EKONOMI</h1>
+<p>Mengenal Kegiatan Ekonomi Masyarakat di Era Digital</p>
+<p>Amati lingkungan sekitar, pahami proses ekonomi, dan analisis perubahan pasar dengan berpikir kritis.</p>
+<nav>
+<button onclick="show('beranda')">Beranda</button>
+<button onclick="show('materi')">Materi</button>
+<button onclick="show('kasus')">Studi Kasus</button>
+<button onclick="show('ai')">Laboratorium AI</button>
+<button onclick="show('kuis')">Kuis</button>
+<button onclick="show('refleksi')">Refleksi</button>
+</nav>
+</div>
+</header>
+<main class="wrap">
+<section id="beranda" class="page">
+<div class="panel hero">
+<div><span class="tag">MISI PEMBELAJARAN</span><h2>Bagaimana masyarakat memenuhi kebutuhannya?</h2>
+<p>Setiap hari kita melihat petani menghasilkan bahan pangan, pedagang menjual barang, kurir mengantarkan pesanan, dan keluarga membeli kebutuhan. Semua aktivitas tersebut merupakan bagian dari kegiatan ekonomi.</p>
+<p><b>Misi kamu:</b> kenali pelaku ekonomi, telusuri proses produksi hingga konsumsi, lalu nilai pengaruh teknologi digital terhadap kegiatan ekonomi masyarakat.</p>
+<button onclick="show('materi')">Mulai belajar →</button></div>
+<div class="illustration" aria-label="Ilustrasi kegiatan ekonomi">🌾 🧑‍🌾 🏪 📦 📱</div>
+</div>
+<div class="panel"><h2>Tujuan Pembelajaran</h2><div class="grid">
+<div class="tile">🎯 <b>Menjelaskan</b> konsep kegiatan ekonomi masyarakat.</div>
+<div class="tile">🔎 <b>Mengidentifikasi</b> produksi, distribusi, dan konsumsi.</div>
+<div class="tile">📊 <b>Menganalisis</b> hubungan pelaku ekonomi dan perubahan pasar.</div>
+<div class="tile">🧠 <b>Mengevaluasi</b> informasi digital dan keluaran AI berdasarkan bukti.</div>
+</div></div>
+<div class="panel"><h2>Peta perjalanan belajar</h2><div class="flow"><span>Produksi</span><i>→</i><span>Distribusi</span><i>→</i><span>Konsumsi</span></div><p class="small">Ingat: kegiatan ekonomi saling berhubungan. Barang yang dikonsumsi masyarakat harus diproduksi dan disalurkan melalui proses distribusi.</p></div>
+</section>
+
+<section id="materi" class="page hidden">
+<div class="panel"><span class="tag">MATERI 1</span><h2>Mengenal Kegiatan Ekonomi</h2>
+<p>Kegiatan ekonomi adalah aktivitas manusia untuk memenuhi kebutuhan hidup melalui produksi, distribusi, dan konsumsi barang maupun jasa. Kegiatan tersebut melibatkan sumber daya, tenaga kerja, modal, keterampilan, dan teknologi.</p>
+<div class="grid">
+<div class="tile"><div style="font-size:2rem">🌱</div><b>Produksi</b>Menghasilkan atau menambah nilai guna barang dan jasa. Contoh: petani menanam sayuran, pengrajin membuat kerajinan, dan penjahit membuat pakaian.</div>
+<div class="tile"><div style="font-size:2rem">🚚</div><b>Distribusi</b>Menyalurkan barang dari produsen kepada konsumen. Contoh: pedagang grosir memasok warung dan kurir mengantarkan pesanan.</div>
+<div class="tile"><div style="font-size:2rem">🛒</div><b>Konsumsi</b>Menggunakan barang atau jasa untuk memenuhi kebutuhan. Contoh: keluarga membeli dan mengolah bahan pangan.</div>
+</div>
+<div class="flow"><span>Produsen</span><i>→</i><span>Distributor</span><i>→</i><span>Konsumen</span></div>
+</div>
+<div class="panel"><span class="tag">MATERI 2</span><h2>Kegiatan Ekonomi Konvensional dan Digital</h2>
+<div class="grid">
+<div class="tile"><b>Pasar konvensional</b>Penjual dan pembeli dapat bertemu langsung. Konsumen melihat barang, menawar harga, dan membayar secara langsung.</div>
+<div class="tile"><b>Pasar digital</b>Penjual memasarkan barang melalui marketplace atau media sosial. Pembeli dapat memesan dari lokasi berbeda dan menggunakan pembayaran digital.</div>
+</div>
+<p>Teknologi dapat memperluas jangkauan pasar dan mempermudah transaksi. Namun, pelaku usaha juga menghadapi persaingan, biaya layanan, risiko penipuan, dan kesenjangan akses internet.</p>
+</div>
+<div class="panel"><span class="tag">LIMA PERSPEKTIF IPS</span><h2>Melihat kegiatan ekonomi secara integratif</h2>
+<ul>
+<li><b>Geografi:</b> lokasi usaha, akses internet, dan jalur distribusi.</li>
+<li><b>Sejarah:</b> perubahan perdagangan dari pasar tradisional ke marketplace.</li>
+<li><b>Ekonomi:</b> produksi, distribusi, konsumsi, harga, permintaan, dan penawaran.</li>
+<li><b>Sosiologi:</b> interaksi penjual-pembeli dan perubahan hubungan sosial.</li>
+<li><b>Antropologi:</b> budaya konsumsi, kebiasaan belanja, dan nilai lokal.</li>
+</ul></div>
+</section>
+
+<section id="kasus" class="page hidden">
+<div class="panel"><span class="tag">TANTANGAN ANALISIS</span><h2>Pedagang sayur di lingkungan Pakis</h2>
+<div class="case"><b>Kasus simulasi:</b> Bu Sari menjual sayuran hasil panen dari petani sekitar. Sebelumnya, ia hanya menjual sayuran di pasar. Sekarang, ia menerima pesanan melalui grup pesan dan mengantarkan pesanan kepada pelanggan. Penjualan daring memperluas jangkauan pembeli, tetapi Bu Sari harus menyiapkan kemasan, mengatur pengantaran, dan menghadapi persaingan harga.</div>
+<h3>Amati dan analisis</h3>
+<div class="question"><p><b>1. Siapa yang berperan sebagai produsen dalam kasus tersebut?</b></p><label><input type="radio" name="c1" value="a"> Petani</label><label><input type="radio" name="c1" value="b"> Pembeli</label><label><input type="radio" name="c1" value="c"> Kurir saja</label></div>
+<div class="question"><p><b>2. Aktivitas Bu Sari menyalurkan sayuran kepada pelanggan termasuk kegiatan...</b></p><label><input type="radio" name="c2" value="a"> Konsumsi</label><label><input type="radio" name="c2" value="b"> Distribusi</label><label><input type="radio" name="c2" value="c"> Produksi</label></div>
+<div class="question"><p><b>3. Sebutkan satu manfaat dan satu risiko penggunaan media digital bagi Bu Sari.</b></p><textarea id="jawabKasus" placeholder="Tuliskan jawaban berdasarkan informasi kasus..."></textarea></div>
+<button onclick="checkCase()">Periksa jawaban</button><div id="caseFeedback" class="feedback" aria-live="polite"></div>
+</div>
+<div class="panel"><h2>Pertanyaan penyelidikan lokal</h2><p>Amati satu kegiatan ekonomi di sekitar rumah atau sekolah. Catat pelaku, barang atau jasa, proses produksi, distribusi, dan konsumsi. Apakah pelaku usaha tersebut menggunakan teknologi digital?</p><p class="small">Jangan mencantumkan nomor telepon, alamat rumah pribadi, atau data pribadi narasumber.</p></div>
+</section>
+
+<section id="ai" class="page hidden">
+<div class="panel"><span class="tag">LITERASI AI</span><h2>Laboratorium AI: bertanya dan memverifikasi</h2>
+<p>Gunakan contoh prompt berikut pada aplikasi AI generatif yang disediakan atau diizinkan guru. Fitur ini merupakan panduan prompt, bukan chatbot yang terhubung langsung ke layanan AI.</p>
+<div class="case"><b>Prompt contoh:</b><br>“Jelaskan bagaimana marketplace dapat mengubah kegiatan produksi, distribusi, dan konsumsi pedagang sayur skala kecil. Berikan satu manfaat, satu risiko, dan tiga pertanyaan yang perlu saya periksa melalui pengamatan atau sumber tepercaya. Jangan mengarang data lokal.”</div>
+<button onclick="copyPrompt()">Salin prompt</button><span id="copyStatus" class="small" aria-live="polite"></span>
+<h3>Checklist verifikasi keluaran AI</h3>
+<label><input type="checkbox"> Apakah penjelasan sesuai konsep IPS?</label><br>
+<label><input type="checkbox"> Apakah AI memberikan data atau fakta yang perlu diperiksa?</label><br>
+<label><input type="checkbox"> Apakah sumber yang disebutkan benar-benar ada?</label><br>
+<label><input type="checkbox"> Apakah jawaban mempertimbangkan kondisi ekonomi lokal?</label><br>
+<label><input type="checkbox"> Apakah saya menyusun kesimpulan sendiri?</label>
+<h3>Catatan analisis saya</h3><textarea placeholder="Tuliskan bagian jawaban AI yang benar, meragukan, dan perlu diperbaiki..."></textarea>
+<p class="small"><b>Etika:</b> jangan memasukkan nama lengkap, alamat, nomor telepon, foto identitas, atau informasi pribadi ke aplikasi AI. Periksa kebijakan usia dan aturan penggunaan yang ditetapkan guru/sekolah.</p>
+</div>
+</section>
+
+<section id="kuis" class="page hidden">
+<div class="panel"><span class="tag">ASESMEN FORMATIF</span><h2>Kuis pemahaman</h2><p>Jawab lima pertanyaan berikut. Skor dihitung otomatis setelah tombol diperiksa.</p>
+<div id="quiz"></div>
+<button onclick="gradeQuiz()">Periksa skor</button><div class="progress"><div id="bar"></div></div><h3 id="score" aria-live="polite">Skor: belum dinilai</h3>
+</div>
+</section>
+
+<section id="refleksi" class="page hidden">
+<div class="panel"><span class="tag">REFLEKSI</span><h2>Apa yang sudah saya pahami?</h2>
+<p>Lengkapi refleksi berikut secara jujur.</p>
+<label>1. Konsep kegiatan ekonomi yang paling saya pahami:</label><textarea></textarea>
+<label>2. Hal baru yang saya pelajari tentang ekonomi digital:</label><textarea></textarea>
+<label>3. Bukti yang saya perlukan sebelum menyimpulkan dampak ekonomi digital:</label><textarea></textarea>
+<label>4. Bagaimana saya menggunakan AI secara bertanggung jawab?</label><textarea></textarea>
+<p class="small">Refleksi ini dapat disimpan dengan menyalin jawaban atau dibahas bersama guru.</p>
+<button onclick="window.print()">Cetak / Simpan sebagai PDF</button>
+</div>
+</section>
+</main>
+<footer>JELAJAH EKONOMI • Media Pembelajaran IPS • Gunakan teknologi secara kritis, aman, dan bertanggung jawab.</footer>
+<script>
+function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})}
+function checkCase(){let a=document.querySelector('input[name="c1"]:checked'),b=document.querySelector('input[name="c2"]:checked'),t=document.getElementById('jawabKasus').value.trim();let s=0;if(a&&a.value==='a')s++;if(b&&b.value==='b')s++;let msg=s===2?'Dua jawaban pilihan ganda benar. ':'Masih ada jawaban pilihan ganda yang perlu diperbaiki. ';msg+=t.length>15?'Jawaban uraian sudah terisi. Periksa apakah manfaat dan risiko didukung kasus.':' Tambahkan manfaat dan risiko secara jelas.';document.getElementById('caseFeedback').textContent=msg}
+function copyPrompt(){let t='Jelaskan bagaimana marketplace dapat mengubah kegiatan produksi, distribusi, dan konsumsi pedagang sayur skala kecil. Berikan satu manfaat, satu risiko, dan tiga pertanyaan yang perlu saya periksa melalui pengamatan atau sumber tepercaya. Jangan mengarang data lokal.';if(navigator.clipboard){navigator.clipboard.writeText(t).then(()=>document.getElementById('copyStatus').textContent=' Prompt tersalin.').catch(()=>document.getElementById('copyStatus').textContent=' Salin teks prompt secara manual.')}else{document.getElementById('copyStatus').textContent=' Salin teks prompt pada kotak di atas secara manual.'}}
+const qs=[
+{q:'Kegiatan menghasilkan barang atau jasa disebut...',o:['Produksi','Distribusi','Konsumsi'],a:0,e:'Produksi menghasilkan atau menambah nilai guna barang dan jasa.'},
+{q:'Pedagang yang menyalurkan barang dari petani kepada pembeli melakukan...',o:['Konsumsi','Distribusi','Investasi'],a:1,e:'Distribusi menyalurkan barang dari produsen kepada konsumen.'},
+{q:'Keluarga menggunakan beras untuk makan. Aktivitas ini termasuk...',o:['Produksi','Distribusi','Konsumsi'],a:2,e:'Konsumsi adalah penggunaan barang atau jasa untuk memenuhi kebutuhan.'},
+{q:'Salah satu manfaat marketplace bagi pedagang kecil adalah...',o:['Pasti menghilangkan semua risiko','Memperluas jangkauan calon pembeli','Menjamin keuntungan selalu naik'],a:1,e:'Marketplace dapat memperluas jangkauan pasar, tetapi tidak menjamin keuntungan.'},
+{q:'Sikap tepat terhadap jawaban AI adalah...',o:['Menerima seluruh jawaban','Menyalin tanpa membaca','Memeriksa fakta dan sumbernya'],a:2,e:'Keluaran AI perlu diverifikasi dan dibandingkan dengan sumber tepercaya.'}
+];
+const qbox=document.getElementById('quiz');
+qs.forEach((q,i)=>{let d=document.createElement('div');d.className='question';d.innerHTML='<p><b>'+(i+1)+'. '+q.q+'</b></p>'+q.o.map((v,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+v+'</label>').join('')+'<div class="small" id="ex'+i+'"></div>';qbox.appendChild(d)});
+function gradeQuiz(){let score=0;qs.forEach((q,i)=>{let a=document.querySelector('input[name="q'+i+'"]:checked');let ok=a&&Number(a.value)===q.a;if(ok)score++;document.getElementById('ex'+i).textContent=(ok?'Benar. ':'Belum tepat. ')+q.e});let n=Math.round(score/qs.length*100);document.getElementById('score').textContent='Skor: '+n+'/100 ('+score+' dari '+qs.length+' benar)';document.getElementById('bar').style.width=n+'%'}
+</script>
+</body>
+</html>
